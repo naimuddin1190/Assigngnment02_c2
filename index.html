@@ -1,11 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vegetable Shop</title>
+
+    <!-- Tailwind CSS & DaisyUI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/d67a630793.js" crossorigin="anonymous"></script>
+
+    <!-- Google font cdn -->
+     <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        .adlam-font{
+  font-family: "ADLaM Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.sora-font{
+  font-family: "Sora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    </style>
+
+
 </head>
 <body>
+
+    <!-- Header section -->
+     <header class=" bg-[#EFEBE3] px-5 py-3 lg:border-none border border-green-300 sora-font lg:border no-border">
+        <!-- Navbar -->
+    <nav class="max-w-7xl mx-auto px-5 lg:px-20 ">
+        <div class="flex w-full items-center justify-between">
+            <!-- Left Section (Logo & Name) -->
+            <div class="flex items-center">
+                <img src="c2-assets/logo-header.png" alt="Logo" class="w-15 h-10">
+                
+            </div>
+
+            <!--Links -->
+            <div class="hidden lg:flex gap-10">
+                <a class="hover:text-yellow-500 cursor-pointer">Product</a>
+                <a class="hover:text-yellow-500 cursor-pointer">Services</a>
+                <a class="hover:text-yellow-500 cursor-pointer">Contact us</a>
+            </div>
+
+            <!-- Right Section (Icons & Buttons) -->
+            <div class="flex items-center gap-4">
+               
+                <i class="fa-solid fa-magnifying-glass hidden  lg:block"></i> 
+                <i class="fa-solid fa-cart-shopping hidden lg:block"></i>
+                <a class="btn bg-white border-green-300 text-black px-4 py-2 lg:flex hidden">Login</a>
+                <a class="btn bg-green-500 text-black px-4 py-2 lg:flex hidden">Register</a>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <label for="menu-toggle" class="cursor-pointer">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+     </header>
+
+
+     <!-- Main Sections -->
+
+     <main>
+        <!-- Banner/Pamper your cat section -->
+      <section class=" md:px-3 px-4 space-y-4 px-5 lg:px-20 py-10 bg-[#EFEBE3]">
+        <!-- banner text -->
+
+        <div class=" space-y-6 lg:top-14 md:top-5 top-0">
+
+
+            
+            <div class="">
+              <h3 class="text-3xl font-bold sora-font text-center">Freshness <span class="text-green-500">
+                You Can
+              </span>
+                <br><span class="text-green-500">Count</span> On, Prices You’ll Love!</h3>
+
+            
+            <div class="absolute top-32 left-56 field h-16 md:block hidden ">
+              <div>
+              </div>
+            </div>
+            </div>
+            
+
+
+
+
+          <p class=" text-gray-500 sora-font text-center ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry<br> staples, we’ve got you covered every day!</p>
+
+          </div>
+
+
+        
+        
+          <!-- Banner img -->
+          <div class="lg:top-0 md:top-20 md:pt-14 lg:pt-0 pt-9">
+            <img class=" animate-pulse pl-10 lg:pl-10" src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+      </section>
+
+     <!-- Banner End -->
+        
+        <!-- Services section -->
+        <section class="max-w-7xl mx-auto px-5 lg:px-20 py-10">
+            <h2 class="text-xl font-bold sora-font mb-6 text-green-500">Services</h2>
     
+            <!-- Categories Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
+                
+                <!-- Category Card 1 -->
+                <div class="bg-[#EFEBE3] p-5 rounded-lg text-center shadow-lg ">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
+                        <img src="c2-assets/service.png" alt="" class="w-12">
+                    </div>
+                    <h3 class="text-lg font-semibold mt-3 sora-font">24/7 Services</h3>
+                    <p class="text-sm text-gray-700 sora-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+    
+                <!-- Category Card 2-->
+                <div class="bg-[#EFEBE3] p-5 rounded-lg text-center shadow-lg ">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
+                        <img src="c2-assets/delivery.png" alt="" class="w-12">
+                    </div>
+                    <h3 class="text-lg font-semibold mt-3 sora-font">Fast Delivery</h3>
+                    <p class="text-sm text-gray-700 sora-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+    
+                <!-- Category Card 3 -->
+                <div class="bg-[#EFEBE3] p-5 rounded-lg text-center shadow-lg">
+                    <div class="bg-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow">
+                        <img src="c2-assets/healthy.png" alt="" class="w-12">
+                    </div>
+                    <h3 class="text-lg font-semibold mt-3 sora-font">Healthy Products</h3>
+                    <p class="text-sm text-gray-700 sora-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+    
+            </div>
+        </section>
+
+
+   
+
+        <!-- Trending section -->
+
+        <section class="mx-auto px-5 lg:px-20 py-10 bg-[#EFEBE3] ">
+          <div class="max-w-7xl mx-auto px-5 lg:px-20 py-10">
+            <h3 class="sora-font text-2xl mb-10 font-bold text-green-500">Popular Products</h3>
+            
+        
+            <div class="md:flex justify-between mx-3 gap-5">
+              <!-- big card -->
+               <div class="relative md:w-2/6 bg-green-300 bg-no-repeat  pt-9 pb-44 md: px-8 rounded-2xl space-y-3 bg-right-bottom bg-mt-4 mb-5 md:mb-0">
+                <h4 class="adlam-font text-3xl">30% off</h4>
+                <p class="text-sm text-gray-500 sora-font">Discover a world of treats, toys, and essentials handpicked for </p>
+                <button class="text-xl px-8 py-3 bg-white rounded-lg sora-font hover:bg-blue-300">Buy Now</button>
+                <img class="absolute  -right-0 -top-25 -bottom-0 w-40 h-40" src="c2-assets/vegetable-offer.png" alt="">
+               </div>
+    
+        
+              <!-- Small Cards Grid -->
+              <div class="grid grid-cols-2 lg:grid-cols-3 gap-5 flex-1 mt-10">
+                <!--Small Card 1-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/dog-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+
+                <!--Small Card 2-->
+                
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/fish-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 3-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/bird-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 4-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/rabbit-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 5-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/bird-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                  
+                </div>
+                <!--Small Cards 6-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/pet-couch.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 7-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/fish-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 8-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/pet-couch.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+                <!--Small Cards 9-->
+                <div class="flex items-center bg-white rounded-xl shadow-md p-4 space-x-3 max-w-64 lg:flex hidden">
+                  <figure>
+                    <img class="bg-[#FFF9F4] p-3 w-14 h-14 rounded-xl" src="c1-assets/rabbit-cartoon.png" alt="Pet Icon" />
+                  </figure>
+                  <div>
+                    <span class="flex items-center text-yellow-500 font-semibold"><i class="fa-solid fa-star"></i> 4.5</span>
+                    <h2 class="font-bold text-lg sora-font">Pet Bed</h2>
+                    <p class="text-gray-700 font-medium sora-font">$39.99</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        
+        
+
+  <!-- Everyday low price section -->
+
+  <section class="max-w-6xl mx-auto p-6">
+    <h2 class="text-3xl font-bold mb-6 sora-font text-green-500">Arrival & Offers</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- First Card -->
+      <div class="bg-[#115414] p-6 rounded-lg shadow-sm flex items-center">
+        <div class="flex-1">
+            <img 
+           class="w-30 h-10" src="c2-assets/dawat-logo.png" alt=""> 
+          
+          <button class="btn btn- h-1 w-full mt-3">Cook Exotic Dishes</button>
+          <p class="text-2xl  sora-font text-white">UP to <span class="font-bold">20% OFF</span></p>
+        </div>
+        <div class="flex-1 flex justify-end">
+          <img src="c2-assets/dawat-mock-up.png" alt="Pet Grooming Mitt" class="w-40 h-60 rounded-md">
+        </div>
+      </div>
+
+      <!-- Second Card -->
+      <div class="bg-[#102861] p-6 rounded-lg flex shadow-sm">
+        <div class="flex-1">
+          <img class="h-15 w-10" src="c2-assets/india-gate-logo.png" alt="">
+          <button class="btn btn- h-1 w-full mt-3">World's No.1 Rice</button>
+          <p class="text-2xl  sora-font text-white mt-2">UP to <span class="font-bold ">40% OFF</span></p>
+        </div>
+        <div class="flex-1 flex">
+          <img src="c2-assets/india-gate-mock-up.png" alt="T-Shirt for Dogs" class="h-60  rounded-md">
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- section-challenge part -->
+   <section>
+
+   </section>
+  
+  
+     </main>
+     
+
+
+     <!-- footer section -->
+     
+  
+     <!-- News -->
+    <div class= "relative flex justify-center md:px-2">
+      <section class= "absolute top-24 bg-[#FFF9F4] rounded-2xl max-w-screen-sm md:max-w-screen-xl md:px-3 px-6 mx-2 md:mx-0  pt-4 pb-8 ">
+      <div class="md:flex justify-around items-center md:px-40">
+        <img class="w-96" src="c2-assets/vegetable-busket.png" alt="">
+
+        <!-- news text -->
+        <div class="space-y-6 md:block flex  flex-col justify-center items-center">
+          <h3 class="adlam-font md:text-4xl text-3xl">Get Grocery News!</h3>
+          <p class=" text-gray-500 text-xl text-center sora-font">Exclusive training tips, ticks, product deals and more.</p>
+          <input class=" sora-font md:pr-64 pr-24 pl-4 py-3" type="email" placeholder="Enter Email.... ">
+          <br>
+          <button class="text-xl px-10 py-3 bg-green-500 rounded-lg hover:bg-blue-300 sora-font">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- News End -->
+
+      
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-green-500 md:mt-80 mt-80 md:pt-80 pt-[700px] lg:pt-[400px] pb-32">
+      <div class="md:flex md:justify-between space-y-6 gap-5 max-w-screen-xl mx-auto md:px-3 px-4 ">
+      <div >
+        <!-- logo -->
+         <div class="flex items-center gap-3 pb-3">
+        <img  src="c2-assets/logo-footer.png" alt="">
+       
+         </div>
+        <p class="max-w-xs sora-font text-white">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+    </div>
+
+    <!-- find a pet -->
+     <div class="flex flex-col gap-3 sora-font text-white">
+     <a href="">Find a pet</a>
+     <a href="">Breeds</a>
+     <a href="">Contact us</a>
+     </div>
+
+     <!-- social -->
+      <div class="text-white">
+        <h4>Follow Us</h4>
+        <div class="space-x-3 ">
+          <i class="fa-brands fa-facebook text-xl"></i>
+          <i class="fa-brands fa-instagram text-xl"></i>
+          <i class="fa-brands fa-linkedin text-xl"></i>
+          <i class="fa-brands fa-youtube text-xl"></i>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <!-- Footer End-->
 </body>
 </html>
